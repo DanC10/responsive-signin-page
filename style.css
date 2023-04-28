@@ -1,0 +1,91 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, blue, white);
+  font-family: "Poppins", serif;
+}
+
+button {
+  background-color: white;
+  border: 1px solid;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 75%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: auto;
+}
+
+.divider {
+  display: flex;
+  flex-basis: 5%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+}
+.divider:before,
+.divider:after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+
+input {
+  background-color: lightgray;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+input:placeholder-shown {
+  text-overflow: ellipsis;
+}
+
+i {
+  font-size: 2rem;
+}
+
+.other > button {
+  height: 20%;
+}
+
+/** Responsive Styles **/
+@media (max-width: 500px) {
+  .options {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 786px) {
+  .card {
+    width: 40%;
+    height: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 75%;
+  }
+}
+
+@media (min-width: 500px) {
+  .forgot {
+    margin-left: auto;
+  }
+}
