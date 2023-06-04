@@ -52,7 +52,7 @@ button {
 input {
   background-color: lightgray;
   border: none;
-  border-radius: 20px;
+  border-radius: 0.375rem;
   padding: 10px;
   outline: none;
 }
